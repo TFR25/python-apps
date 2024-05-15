@@ -23,7 +23,7 @@ nav {
 
 /****************************introduction section**************************************/
 .developer-introduction {
-  box-shadow: 0 0.313rem 0.938rem rgba(32, 30, 52, 8);
+  background-color: #494D5F;
 }
 
 .profile-img {
@@ -31,3 +31,25 @@ nav {
   border-radius: 50%;
   margin-bottom: 2rem;
 }
+
+/****************************footer section**************************************/
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #EBEAF5;
+  box-shadow: -1rem 0 3.918rem rgba(32, 30, 52, 8);
+}
+
+.fa-circle {
+    color: #A0D2EB;
+}
+
+.fa-inverse {
+    color: #EBEAF5;
+}
+
+.fa-inverse:hover {
+color: #494D5F;
+}
+
+
