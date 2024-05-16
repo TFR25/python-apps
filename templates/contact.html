@@ -1,0 +1,40 @@
+{%extends 'base.html'%}
+{%block navbar%}{%include 'nav.html'%}{%endblock%}
+{%block content%}
+<section class="card-body ">
+  <section class="contact-info">
+    <img
+            src="./static/assets/profileImage_logo/HeadShot.jpg"
+            height="6.25rem"
+            class="profile-img"
+            alt="Authors profile image"
+    />
+    <h1><b>Contact Me Here </b></h1>
+    <p>Tel: +1(360)843-3647</p>
+    <p>Email: tfernandez25@gmail.com</p>
+    <!-- <a href="index.html" id="contact-btn"><b>Return home</b> -->
+  </section>
+
+  <div class="message-box container">
+    <h3 class="contact-info">Or use this form</h3>
+    <form method="POST" action="{{url_for('contact')}}">
+        {{form.csrf_token}}
+        <p id="name">{{ form.name.label }}<br>{{ form.name }}</p>
+        <p id="email">{{ form.email.label }}<br>{{ form.email(size=30) }}</p>
+        <p id="message">{{ form.message.label }}<br>{{ form.message }}</p>
+        {{ form.submit }}
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                  {% for message in messages %}
+                     {{ message }}
+                  {% endfor %}
+                {% endif %}
+            {% endwith %}
+    </form>
+
+
+  </div>
+</section>
+{%endblock%}
+{%block footer%}{%include 'footer.html'%}{%endblock%}
+
