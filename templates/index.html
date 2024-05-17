@@ -1,25 +1,27 @@
 {%extends 'base.html'%}
 <!--Navigation bar-->
 {%block navbar%}{%include 'nav.html'%}{%endblock%}
-<!--Projects section-->
+
 {%block content%}
 <div class="px-4 pt-5 my-5 text-center developer-introduction ">
     <h1 class="display-4 fw-bold">Hi, my name is Tasha Fernandez-Ross</h1>
     <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">I am a passionate Full-Stack Web Developer who loves applying my skills and knowledge toward creating innovative and user-friendly applications. Please click the button below to view the projects I've created.</p>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-        <button type="button" class="btn btn-lg px-4 me-sm-3">Explore Projects</button>
-      </div>
+        <p class="lead mb-4">I am a passionate Full-Stack Web Developer who loves applying my skills and knowledge
+            toward creating innovative and user-friendly applications. Please click the button below to view the
+            projects I've created.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <a href="{{url_for('projects')}}">Explore Projects</a>
+        </div>
     </div>
     <div class="overflow-hidden" style="max-height: 30vh;">
-      <div class="container px-5">
-        <img
-        class="profile-img"
-        src="./static/assets/profileImage_logo/HeadShot.jpg"
-      />
-      </div>
+        <div class="container px-5">
+            <img
+                    class="profile-img"
+                    src="./static/assets/profileImage_logo/HeadShot.jpg"
+            />
+        </div>
     </div>
-  </div>
+</div>
 {%endblock%}
 <!--Footer section-->
 {%block footer%}{%include 'footer.html'%}{%endblock%}

@@ -2,19 +2,20 @@
 
 {%block navbar%}
 <nav class="py-3 mb-4 d-flex flex-wrap justify-content-center justify-content-md-between border-bottom">
-  <div class="mx-auto py-4">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-center">
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
-          <img class="bi me-2" width="50" height="50" role="img" src="{{url_for('static', filename='assets/profileImage_logo/TFR_Logo.svg')}}">
-        </a>
+    <div class="mx-auto py-4">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-center">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+                <img class="bi me-2" width="50" height="50" role="img"
+                     src="{{url_for('static', filename='assets/profileImage_logo/TFR_Logo.svg')}}">
+            </a>
 
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 link-secondary">Projects</a></li>
-          <li><a href="{{url_for('resume')}}" class="nav-link px-2 link-body-emphasis">Resume</a></li>
-          <li><a href="https://github.com/TFR25" class="nav-link px-2 link-body-emphasis">GitHub</a></li>
-          <li><a href="{{url_for('contact')}}" class="nav-link px-2 link-body-emphasis">Contact</a></li>
-        </ul>
-      </div>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="{{url_for('projects')}}" class="nav-link px-2 link-secondary">Projects</a></li>
+                <li><a href="{{url_for('resume')}}" class="nav-link px-2 link-body-emphasis">Resume</a></li>
+                <li><a href="https://github.com/TFR25" class="nav-link px-2 link-body-emphasis">GitHub</a></li>
+                <li><a href="{{url_for('contact')}}" class="nav-link px-2 link-body-emphasis">Contact</a></li>
+            </ul>
+        </div>
     </div>
-  </nav>
+</nav>
 {%endblock%}
