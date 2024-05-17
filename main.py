@@ -65,5 +65,10 @@ def contact():
         return render_template('contact.html', form=cForm, year=current_year)
 
 
+@app.route("/resume")
+def resume():
+    return render_template('resume.html', year=current_year)
+
+
 if __name__ == "__main__":
     app.run(debug=True)
